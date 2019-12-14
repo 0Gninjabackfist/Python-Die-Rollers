@@ -1,3 +1,3 @@
 import random
 print(random.randint(1, 6))
-#test
+#test 2 times
