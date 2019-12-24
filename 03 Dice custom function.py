@@ -8,6 +8,6 @@ def gdie():  #define the D6 function as gdie (gamma die)
     if dieroll == 4: dieroll = 0
     if dieroll == 5: dieroll = 0
     if dieroll == 6: dieroll = 0
-    #return dieroll
-    print(dieroll)
-gdie()
+    #return dieroll  # this would return the dieroll value
+    print(dieroll) #this tells the function to print the result of the die roll when called
+gdie() #invoke the gdie function
