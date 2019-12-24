@@ -9,6 +9,15 @@ def roll(die):  #define the D6 function as gdie (gamma die)
         if groll == 4: groll = 0
         if groll == 5: groll = 0
         if groll == 6: groll = 0
+        return groll
+    if die == 'g1':
+        groll = random.randint(1, 6) #groll = a random integer from 1-6 using randint from the random library
+        if groll == 1: groll = 1
+        if groll == 2: groll = 1
+        if groll == 3: groll = 2
+        if groll == 4: groll = 0
+        if groll == 5: groll = 0
+        if groll == 6: groll = 0
         print('gamma die rolls:',(groll)) #this tells the function to print the result of the die roll when called
     if die == 'b':
         broll = random.randint(1, 6) #broll = a random integer from 1-6 using randint from the random library
@@ -37,10 +46,11 @@ def roll(die):  #define the D6 function as gdie (gamma die)
         if oroll == 5: oroll = 0
         if oroll == 6: oroll = 0
         print('objective die rolls:',(oroll)) #this tells the function to print the result of the die roll when called
-    else:
-        print('Sorry I only recognize a, b, g, and o.  Try again')
-roll('a') #invoke the die function for 'a' alpha die
+
+
+roll('a') #invoke the die function for 'b' beta die
 roll('b') #invoke the die function for 'b' beta die
-roll('g') #invoke the die function for 'g' gamma die
+print("Gamma die rolled and printed by function equals", roll('g')) #invoke the die function for 'a' alpha die
+roll('g1') #invoke the die function for 'a' alpha die
 roll('o') #invoke the die function for 'o' objective die
-roll('x')
+
