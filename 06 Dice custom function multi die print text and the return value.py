@@ -40,8 +40,8 @@ def roll(die):  #define the D6 function as gdie (gamma die)
         return oroll
 
 
-print("Alpha die rolled and printed by function equals", roll('a')) #invoke the die function for 'a' gamma die
-print("Beta die rolled and printed by function equals", roll('b')) #invoke the die function for 'b' gamma die
-print("Gamma die rolled and printed by function equals", roll('g')) #invoke the die function for 'g' gamma die
-print("Objective die rolled and printed by function equals", roll('o')) #invoke the die function for 'g' gamma die
+print("Alpha die rolled a ", roll('a')) #invoke the die function for 'a' gamma die
+print("Beta die rolled a ", roll('b')) #invoke the die function for 'b' gamma die
+print("Gamma die rolled a ", roll('g')) #invoke the die function for 'g' gamma die
+print("Objective die rolled a ", roll('o')) #invoke the die function for 'g' gamma die
 
