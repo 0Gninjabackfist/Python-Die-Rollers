@@ -9,8 +9,8 @@ def roll(die):  #define the D6 function as gdie (gamma die)
         if groll == 4: groll = 0
         if groll == 5: groll = 0
         if groll == 6: groll = 0
-        if groll == 0: intel = 1
-        return groll, intel
+        if groll == 0: intel = 1 #<<how is this going to work?
+        return groll, intel #<<how is this going to work?
     if die == 'b':
         broll = random.randint(1, 6) #broll = a random integer from 1-6 using randint from the random library
         if broll == 1: broll = 1
@@ -19,8 +19,7 @@ def roll(die):  #define the D6 function as gdie (gamma die)
         if broll == 4: broll = 3
         if broll == 5: broll = 0
         if broll == 6: broll = 0
-        if broll == 0: intel = 1
-        return broll, intel
+        return broll
         #print('beta die rolls:',(broll)) #this tells the function to print the result of the die roll when called
     if die == 'a':
         aroll = random.randint(1, 6) #aroll = a random integer from 1-6 using randint from the random library
@@ -42,7 +41,7 @@ def roll(die):  #define the D6 function as gdie (gamma die)
         return oroll
 
 
-print("Alpha die rolled a ", roll('a') and ",intel" "Inelligence") #invoke the die function for 'a' gamma die
+print("Alpha die rolled a ", roll('a')) #invoke the die function for 'a' gamma die
 print("Beta die rolled a ", roll('b')) #invoke the die function for 'b' gamma die
 print("Gamma die rolled a ", roll('g')) #invoke the die function for 'g' gamma die
 print("Objective die rolled a ", roll('o')) #invoke the die function for 'g' gamma die
