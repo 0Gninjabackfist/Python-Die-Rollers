@@ -44,9 +44,9 @@ def roll(die):  #define the D6 function as gdie (gamma die)
         return (oroll, intel) #<<how is this going to work?
 
 (groll, gintel) = roll('g') #these names don't have to match the variables from 'g' die function
-(broll, bintel) = roll('b') #these names don't have to match the variables from 'g' die function
-(aroll, aintel) = roll('a') #these names don't have to match the variables from 'g' die function
-(oroll, ointel) = roll('o') #these names don't have to match the variables from 'g' die function
+(broll, bintel) = roll('b') #these names don't have to match the variables from 'b' die function
+(aroll, aintel) = roll('a') #these names don't have to match the variables from 'a' die function
+(oroll, ointel) = roll('o') #these names don't have to match the variables from 'o' die function
 
 
 print("Alpha die result is", aroll, "and there was", aintel, "Intelligence generated")
