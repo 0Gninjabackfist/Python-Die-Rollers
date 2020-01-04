@@ -1,7 +1,7 @@
 import random  #import the random library to use randint
 
 def roll(die):  #define the D6 function as gdie (gamma die)
-    intel = 0
+    intel = 0 #setting intel to 0 for all dice so it can be assigned to 1 if the die result is 0
     if die == 'g':
         groll = random.randint(1, 6) #groll = a random integer from 1-6 using randint from the random library
         if groll == 1: groll = 1
@@ -20,9 +20,9 @@ def roll(die):  #define the D6 function as gdie (gamma die)
         if broll == 4: broll = 3
         if broll == 5: broll = 0
         if broll == 6: broll = 0
-        if broll == 0: intel = 1 #<<how is this going to work?
-        return (broll, intel) #<<how is this going to work?
-         #print('beta die rolls:',(broll)) #this tells the function to print the result of the die roll when called
+        if broll == 0: intel = 1 
+        return (broll, intel) 
+        
     if die == 'a':
         aroll = random.randint(1, 6) #aroll = a random integer from 1-6 using randint from the random library
         if aroll == 1: aroll = 1
@@ -31,8 +31,8 @@ def roll(die):  #define the D6 function as gdie (gamma die)
         if aroll == 4: aroll = 4
         if aroll == 5: aroll = 5
         if aroll == 6: aroll = 0
-        if aroll == 0: intel = 1 #<<how is this going to work?
-        return (aroll, intel) #<<how is this going to work?
+        if aroll == 0: intel = 1 
+        return (aroll, intel) 
     if die == 'o':
         oroll = random.randint(1, 6) #oroll = a random integer from 1-6 using randint from the random library
         if oroll == 1: oroll = 1
@@ -41,7 +41,7 @@ def roll(die):  #define the D6 function as gdie (gamma die)
         if oroll == 4: oroll = 0
         if oroll == 5: oroll = 0
         if oroll == 6: oroll = 0
-        return (oroll, intel) #<<how is this going to work?
+        return (oroll, intel) #set oroll to the number rolled and assign intel to 1 if roll is 0
 
 (groll, gintel) = roll('g') #these names don't have to match the variables from 'g' die function
 (broll, bintel) = roll('b') #these names don't have to match the variables from 'b' die function
