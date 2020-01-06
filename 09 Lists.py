@@ -2,19 +2,23 @@ import random  #import the random library to use randint
 
 def roll(die):  #define the D6 function as gdie (gamma die)
     intel = 0 #setting intel to 0 for all dice so it can be assigned to 1 if the die result is 0
-    roll = random.randint(1, 6) #roll = a random integer from 1-6 using randint from the random library
+    roll = random.randint(0, 5) #roll = a random integer from 1-6 using randint from the random library
     gdie = [1,1,2,0,0,0]
     bdie = [1,1,2,3,0,0]
     adie = [1,2,3,4,5,0]
     odie = [1,1,0,0,0,0]
     if die == 'g':
-       
-
-        if groll == 0: intel = 1 #this assignes intel to 1 if the die rolls a 0, it's default a 0 itself
-        return (groll, intel) #<<how is this going to work?
-
-
-
+        if gdie[roll] == 0: intel = 1 #this assignes intel to 1 if the die rolls a 0, it's default a 0 itself
+        return (gdie[roll], intel)
+    if die == 'b':
+        if bdie[roll] == 0: intel = 1 #this assignes intel to 1 if the die rolls a 0, it's default a 0 itself
+        return (bdie[roll], intel)
+    if die == 'a':
+        if adie[roll] == 0: intel = 1 #this assignes intel to 1 if the die rolls a 0, it's default a 0 itself
+        return (adie[roll], intel)
+    if die == 'o':
+        if odie[roll] == 0: intel = 1 #this assignes intel to 1 if the die rolls a 0, it's default a 0 itself
+        return (odie[roll], intel)
 
 (groll, gintel) = roll('g') #these names don't have to match the variables from 'g' die function
 (broll, bintel) = roll('b') #these names don't have to match the variables from 'b' die function
