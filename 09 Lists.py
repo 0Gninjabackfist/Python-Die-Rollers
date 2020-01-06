@@ -10,7 +10,7 @@ def roll(die):  #define the D6 function as gdie (gamma die)
         if groll == 4: groll = 0
         if groll == 5: groll = 0
         if groll == 6: groll = 0
-        if groll == 0: intel = 1 #<<how is this going to work?
+        if groll == 0: intel = 1 #this assignes intel to 1 if the die rolls a 0, it's default a 0 itself
         return (groll, intel) #<<how is this going to work?
     if die == 'b':
         broll = random.randint(1, 6) #broll = a random integer from 1-6 using randint from the random library
