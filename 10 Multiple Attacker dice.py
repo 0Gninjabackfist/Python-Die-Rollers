@@ -23,8 +23,17 @@ def roll(die):  #define die rolling function
 #these variables are only for use outside of the function and are populated by the values in the function when called
 
 
-print("Alpha die result is", aroll, "and there was", aintel, "Intelligence generated")
-print("Beta die result is", broll, "and there was", bintel, "Intelligence generated")
-print("Gamma die result is", groll, "and there was", gintel, "Intelligence generated")
-print("Objective die result is", oroll, "and there was", ointel, "Intelligence generated")
+# print("Alpha die result is", aroll, "and there was", aintel, "Intelligence generated")
+# print("Beta die result is", broll, "and there was", bintel, "Intelligence generated")
+# print("Gamma die result is", groll, "and there was", gintel, "Intelligence generated")
+# print("Objective die result is", oroll, "and there was", ointel, "Intelligence generated")
+
+   
+#this adds the result of a series of dice from a pretermined list
+attdice = ['g','g','b']
+attroll = 0
+for adie in attdice:
+    (aresult,_,_) = roll(adie)
+    attroll = attroll + int(aresult)
+print('Attacker total =', attroll)
     
