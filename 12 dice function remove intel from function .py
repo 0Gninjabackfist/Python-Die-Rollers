@@ -32,14 +32,14 @@ print('Attacker total =', attroll) #print out the total of the values rolled
 ####################################################################################################################################################
 
 
-(groll,gface) = roll(dice['g'],6) #these names don't have to match the variables from 'g' die function, the underscore is telling it to ignore
-(broll,bface) = roll(dice['b'],6) 
-(aroll,aface) = roll(dice['a'],6) 
-(oroll,oface) = roll(dice['o'],6)
-# #these variables are only for use outside of the function and are populated by the values in the function when called
+# (groll,gface) = roll(dice['g'],6) #these names don't have to match the variables from 'g' die function, the underscore is telling it to ignore
+# (broll,bface) = roll(dice['b'],6) 
+# (aroll,aface) = roll(dice['a'],6) 
+# (oroll,oface) = roll(dice['o'],6)
+# # #these variables are only for use outside of the function and are populated by the values in the function when called
 
 
-print("Alpha die result is", aroll)
-print("Beta die result is", broll)
-print("Gamma die result is", groll)
-print("Objective die result is", oroll)
+# print("Alpha die result is", aroll)
+# print("Beta die result is", broll)
+# print("Gamma die result is", groll)
+# print("Objective die result is", oroll)
